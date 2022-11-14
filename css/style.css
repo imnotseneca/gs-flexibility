@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --clr-bdy: #110d0d;
+    --clr-heading:#CDE5D7;
+    --clr-base: #d3d5d8;
+    --clr-base2:#EEC6CA;
+    --clr-brand:#5f0413;
+    --clr-brand2:rgba(0, 0, 0, 0.623);
+    --sidebar-width: 240px;
+    --font-base:"Bai Jamjuree";
+
+}
+
+body {
+    background-color: var(--clr-bdy);
+    color: var(--clr-base);
+    font-family: var(--font-base), sans-serif ;
+
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--clr-heading);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-bdy);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--clr-brand);
+}
+
+img {
+    width: 100%;
+}
+.bg-base {
+    background-color: var(--clr-brand2);
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 0;
+    border-bottom: 2px solid rgba(139, 15, 15, 0.39);
+       
+}
+
+.custom-link {
+    font-weight: 700;
+    position: relative;
+    transition: all 250ms ease-in;
+    transform-origin: left;
+}
+
+.custom-link::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--clr-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transform-origin: right;
+    transition: all 400ms ease-out;
+
+    
+
+}
+
+.custom-link:hover {
+    color: var(--clr-heading);
+}
+
+.custom-link:hover::after {
+    width: 100%;
+    transition: all 400ms ease-in-out;
+    transform-origin: right;
+
+}
+
+.shadow-effect {
+    transition: all .5s;
+}
+.shadow-effect:hover,
+.shadow-effect:focus {
+    box-shadow: -6px 6px 0 0 var(--clr-brand);
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 2em;
+    background-color: var(--clr-brand);
+    color: var(--clr-bdy) ;
+}
+
+.text-brand {
+    color: var(--clr-brand);
+}
+
+/* NAV-BAR */
+
+.navbar {
+    background-color: var(--clr-base);
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFF;
+
+}
+
+.navbar .nav-link:hover {
+    color: var(--clr-brand);
+
+}
+
+.navbar .nav-link.active {
+    color: var(--clr-brand);
+
+}
+@media (min-width: 992px) {
+    .navbar{
+        min-height: 100vh;
+        width: var(--sidebar-width);
+        background: linear-gradient(rgba(37, 38, 39, 0.747), rgba(36, 37, 39, 0.712));
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .navbar-brand img {
+        border: 8px solid var(--clr-bdy);
+    }
+
+    /* CONTENT WRAPPER */
+    #content-wrapper {
+    padding-left: var(--sidebar-width);
+    background-image: url(gs-flexibility\img\background.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+
+    .logo {
+        display: none;
+        }
+
+}
+
+@media (max-width: 992px) {
+
+    .navbar {
+        background: linear-gradient(rgba(37, 38, 39, 0.747), rgba(36, 37, 39, 0.712));
+    }
+
+    .col-md-4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .col-lg-6 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        display: block;
+        width: 75%;
+    }
+
+}
+
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand { 
+    background-color: var(--clr-brand);
+    border-color: var(--clr-brand);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: var(--clr-brand2);
+    color: var(--clr-base);
+    border-color: var(--clr-brand2);
+}
+
+/* CARD */
+
+.card-custom .card-custom-image {
+    overflow: hidden;
+} 
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+/* CONTACT */
+
+ #contact .form-control {
+    background-color:  var(--clr-base);
+    border-color: var(--clr-base);
+    color: var(--clr-bdy);
+}
+
+#contact .form-control:focus {
+    border-color: var(--clr-brand);
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: var(--clr-bdy);
+}
+
+#contact input.form-control {
+    height: 3em;
+}
+
+/* .la-instagram {
+margin-left:5px;
+} */
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+}
+
