@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
 
 :root {
-    --clr-bdy: #110d0d;
-    --clr-heading:#CDE5D7;
-    --clr-base: #d3d5d8;
+    --clr-bdy: #d8d8d8;
+    --clr-heading:#282629;
+    --clr-base: black;
     --clr-base2:#EEC6CA;
     --clr-brand:#5f0413;
-    --clr-brand2:rgba(0, 0, 0, 0.623);
+    --clr-brand2:#CFCFCF;
+    --clr-brand3: #413d3dc7;
     --sidebar-width: 240px;
     --font-base:"Bai Jamjuree";
 
@@ -20,6 +21,7 @@ body {
     background-color: var(--clr-bdy);
     color: var(--clr-base);
     font-family: var(--font-base), sans-serif ;
+    background-image: linear-gradient(180deg, var(--clr-bdy) 30%, var(--clr-base2) 100%)
 
 
 }
@@ -43,17 +45,17 @@ img {
     width: 100%;
 }
 .bg-base {
-    background-color: var(--clr-brand2);
+    background-color: var(--clr-brand3);
 }
 
 .full-height {
-    min-height: 100vh;
+    min-height: 80vh;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 80px 0;
-    border-bottom: 2px solid rgba(139, 15, 15, 0.39);
+
        
 }
 
@@ -109,14 +111,82 @@ img {
     color: var(--clr-bdy) ;
 }
 
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .text-brand {
     color: var(--clr-brand);
 }
 
+.rainbow-text {
+  
+    /* Font options */
+   text-shadow: 2px 2px 4px #000000;
+   
+    /* Chrome, Safari, Opera */
+   -webkit-animation: rainbow 5s infinite; 
+   
+   /* Internet Explorer */
+   -ms-animation: rainbow 5s infinite;
+   
+   /* Standar Syntax */
+   animation: rainbow 5s infinite; 
+ }
+ 
+ /* Chrome, Safari, Opera */
+ @-webkit-keyframes rainbow{
+   0%{color: orange;}	
+   10%{color: purple;}	
+     20%{color: red;}
+   30%{color: CadetBlue;}
+     40%{color: yellow;}
+   50%{color: coral;}
+     60%{color: green;}
+   70%{color: cyan;}
+   80%{color: DeepPink;}
+   90%{color: DodgerBlue;}
+     100%{color: orange;}
+ }
+ 
+ /* Internet Explorer */
+ @-ms-keyframes rainbow{
+    0%{color: orange;}	
+   10%{color: purple;}	
+     20%{color: red;}
+   30%{color: CadetBlue;}
+     40%{color: yellow;}
+   50%{color: coral;}
+     60%{color: green;}
+   70%{color: cyan;}
+   80%{color: DeepPink;}
+   90%{color: DodgerBlue;}
+     100%{color: orange;}
+ }
+ 
+ /* Standar Syntax */
+ @keyframes rainbow{
+     0%{color: orange;}	
+   10%{color: purple;}	
+     20%{color: red;}
+   30%{color: CadetBlue;}
+     40%{color: yellow;}
+   50%{color: coral;}
+     60%{color: green;}
+   70%{color: cyan;}
+   80%{color: DeepPink;}
+   90%{color: DodgerBlue;}
+     100%{color: orange;}
+ }
 /* NAV-BAR */
 
 .navbar {
     background-color: var(--clr-base);
+    
+
 }
 
 .navbar .nav-link {
@@ -139,9 +209,10 @@ img {
     .navbar{
         min-height: 100vh;
         width: var(--sidebar-width);
-        background: linear-gradient(rgba(37, 38, 39, 0.747), rgba(36, 37, 39, 0.712));
+        background: #cfcfcf;
         background-size: cover;
         background-position: center;
+        background-image: linear-gradient(180deg, var(--clr-bdy) 30%, var(--clr-brand) 150%)
 
     }
 
