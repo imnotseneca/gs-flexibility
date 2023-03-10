@@ -327,20 +327,17 @@ margin-left:5px;
 /* FOOTER */
 
 #home {
-    background-image: url('../img/6353min.jpg') !important;
-    background-attachment: fixed;
+    background-image: url('https://res.cloudinary.com/dhy1g5ude/image/upload/v1678447327/gs-flex/6353min_d8tbbp.jpg') !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
 
-    
-
 }
 
+
 #about {
-    background-image: url('../img/_Y7A6551.jpg') !important;
-    background-attachment: fixed;
+    background-image: url('https://res.cloudinary.com/dhy1g5ude/image/upload/v1678447323/gs-flex/_Y7A6551_tj6eyg.jpg') !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -354,9 +351,8 @@ margin-left:5px;
 }
 
 #plans {
-    background-image: url('../img/_Y7A6569.jpg') !important;
-    background-attachment: fixed;
-    background-position: center;
+    background-image: url('https://res.cloudinary.com/dhy1g5ude/image/upload/v1678451031/gs-flex/9228_50_lmhpgq.jpg') !important;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -366,8 +362,7 @@ margin-left:5px;
 }
 
 #flex {
-    background-image: url('../img/95052.jpg') !important;
-    background-attachment: fixed;
+    background-image: url('https://res.cloudinary.com/dhy1g5ude/image/upload/v1678447328/gs-flex/95052_gchh6a.jpg') !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -379,7 +374,6 @@ margin-left:5px;
 
 #contact {
     background-image: url('../img/_Y7A6924.jpg') !important;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -399,6 +393,8 @@ margin-left:5px;
 }
 
 .separator {
+    position: relative;
+    z-index: 2;
     min-height: 12em;
     background-image: linear-gradient(180deg, var(--clr-bdy) 30%, var(--clr-base2) 100%)
 
