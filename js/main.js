@@ -29,3 +29,16 @@ AOS.init({
 //   mailBut.href = `mailto:gretacsotelo@gmail.com?subject=Hola&soy%${nameInput}%${subjectInput}body=${msgInput}`
 
 // }
+const animateGradient = (element) => {
+  const colors = element.dataset.gradientColors.split(',');
+  let index = 0;
+
+  setInterval(() => {
+    element.style.backgroundImage = `linear-gradient(to left, ${colors[index]}, ${colors[(index + 1) % colors.length]})`;
+    index = (index + 1) % colors.length;
+  }, 110);
+};
+
+document.querySelectorAll('#rainbow-text').forEach((element) => {
+  animateGradient(element);
+});
