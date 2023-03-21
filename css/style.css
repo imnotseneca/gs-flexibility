@@ -340,6 +340,7 @@ margin-left:5px;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    -webkit-background-attachment: fixed;
     background-attachment: fixed;
 
 }
@@ -351,6 +352,7 @@ margin-left:5px;
     background-size: cover;
     min-height: 30vh;
     align-items: center;
+    -webkit-background-attachment: fixed;
     background-attachment: fixed;
     
 }
@@ -366,6 +368,7 @@ margin-left:5px;
     background-size: cover;
     min-height: 30vh;
     align-items: center;
+    -webkit-background-attachment: fixed;
     background-attachment: fixed;
 
 }
@@ -377,7 +380,8 @@ margin-left:5px;
     background-size: cover;
     min-height: 100vh;
     align-items: center;
-    /* background-attachment: fixed; */
+    -webkit-background-attachment: fixed;
+    background-attachment: fixed;
     
 
 }
@@ -406,7 +410,7 @@ contact {
         min-width: 15em;
     }
     .separator2, .separator3 {
-        background-position: -639px 167px;
+        background-attachment: scroll ;
     }
 }
 
