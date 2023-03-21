@@ -219,9 +219,6 @@ img {
     /* CONTENT WRAPPER */
     #content-wrapper {
     padding-left: var(--sidebar-width);
-    background-image: url(gs-flexibility\img\background.jpg);
-    background-position: center;
-    background-size: cover;
     }
 
     .logo {
@@ -334,7 +331,7 @@ margin-left:5px;
 /* FOOTER */
 
 #home {
-    background-image: url('https://res.cloudinary.com/dhy1g5ude/image/upload/v1678447327/gs-flex/6353min_d8tbbp.jpg') !important;
+    background-image: url('https://res.cloudinary.com/dhy1g5ude/image/upload/c_fill,h_1080,w_1920/v1678447327/gs-flex/6353min_d8tbbp.webp') !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -343,7 +340,7 @@ margin-left:5px;
 }
 
 #about {
-    background-image: url('https://res.cloudinary.com/dhy1g5ude/image/upload/v1678447323/gs-flex/_Y7A6551_tj6eyg.jpg') !important;
+    background-image: url('https://res.cloudinary.com/dhy1g5ude/image/upload/c_fill,h_1080,w_1920/v1678447323/gs-flex/_Y7A6551_tj6eyg.webp') !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -357,7 +354,7 @@ margin-left:5px;
 }
 
 #plans {
-    background-image: url('https://res.cloudinary.com/dhy1g5ude/image/upload/v1678451031/gs-flex/9228_50_lmhpgq.jpg') !important;
+    background-image: url('https://res.cloudinary.com/dhy1g5ude/image/upload/c_fill,h_1080,w_1920/v1678451031/gs-flex/9228_50_lmhpgq.webp') !important;
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -368,7 +365,7 @@ margin-left:5px;
 }
 
 #flex {
-    background-image: url('https://res.cloudinary.com/dhy1g5ude/image/upload/v1678447328/gs-flex/95052_gchh6a.jpg') !important;
+    background-image: url('https://res.cloudinary.com/dhy1g5ude/image/upload/c_fill,h_1080,w_1920/v1678447328/gs-flex/95052_gchh6a.webp') !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -379,7 +376,7 @@ margin-left:5px;
 }
 
 #contact {
-    background-image: url('https://res.cloudinary.com/dhy1g5ude/image/upload/v1678447321/gs-flex/_Y7A6924_tqpmj7.jpg') !important;
+    background-image: url('https://res.cloudinary.com/dhy1g5ude/image/upload/c_fill,h_1080,q_100,w_1920/v1678447321/gs-flex/_Y7A6924_tqpmj7.webp') !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
