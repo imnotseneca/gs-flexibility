@@ -50,7 +50,7 @@
     <!-- Main section starts-->
       <div id="content-wrapper">
         <!-- Home starts -->
-        <section id="home" class="full-height px-lg-5">
+        <section id="home" class="full-height px-lg-5 lazy" data-bg="https://res.cloudinary.com/dhy1g5ude/image/upload/gs-flex/6353min_d8tbbp.webp">
             <div class="container service p-4 bg-base rounded-4 shadow-effect fix-width" data-aos="fade-up" data-aos-delay="300">
                 <div class="row pb-4 justify-content-around">
                     <div class=" fix-width">
@@ -112,7 +112,7 @@
           </div>
         </section>
         <!-- About ends -->
-        <section class="separator2">
+        <section class="separator2 lay" data-bg="https://res.cloudinary.com/dhy1g5ude/image/upload/gs-flex/_Y7A6551_tj6eyg.webp">
           <div class="container"></div>
         </section>
         <!-- Plans starts -->
@@ -174,7 +174,7 @@
             </div>
         </section>
         <!-- Plans ends -->
-        <section class="separator3">
+        <section class="separator3 lazy" data-bg="https://res.cloudinary.com/dhy1g5ude/image/upload/gs-flex/9228_50_lmhpgq.webp">
           <div class="container"></div>
         </section>
         <!-- Contact starts -->
@@ -245,9 +245,15 @@
         <!-- Footer ends -->
       </div>
     <!-- Main section ends -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+
 </body>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/aos.js"></script>
 <script src="js/main.js"></script>
-
+<script>
+  const lazyLoad = new LazyLoad({
+    elements_selector: ".lazy"
+  });
+</script>
 </html>
